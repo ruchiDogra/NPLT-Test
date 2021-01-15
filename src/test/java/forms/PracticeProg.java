@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-//
+// practice program on form controls
 public class PracticeProg {
 
 	public static void main(String[] args) 

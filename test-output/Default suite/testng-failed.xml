@@ -3,15 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.RegisterTestCase">
+      <class name="forms.LoginParameterization">
         <methods>
-          <include name="Register"/>
-          <include name="setBrowser"/>
-          <include name="CloseWebsite"/>
-          <include name="OpenWebsite"/>
-          <include name="Login"/>
+          <include name="doLogin" invocation-numbers="2"/>
+          <include name="openURL"/>
         </methods>
-      </class> <!-- testCases.RegisterTestCase -->
+      </class> <!-- forms.LoginParameterization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

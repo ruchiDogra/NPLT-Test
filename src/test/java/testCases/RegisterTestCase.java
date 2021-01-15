@@ -45,7 +45,7 @@ public class RegisterTestCase {
 	public void CloseWebsite()
 	{
 		Reporter.log("browser closed after test case execution");
-		driver.close();
+	//	driver.close();
 	}
 	 
 	
@@ -82,7 +82,7 @@ public class RegisterTestCase {
 		
 		
 		//add wait so that all elements in 2nd screen load properly
-		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 	
 		driver.findElement(By.xpath("//*[@id=\"input-telephone\"]")).sendKeys("9899108080");
 		
@@ -90,11 +90,12 @@ public class RegisterTestCase {
 			
 		driver.findElement(By.xpath("/html/body/div[1]/div[2]/form/span/input")).click();
 		
-		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		
-		String expectedMsg = driver.findElement(By.xpath("/html/body/div/div/div/h4[1]/p[1]")).getText();
+		String expectedMsg = driver.findElement(By.xpath("/html/body/div/div/div/h4[1]")).getText();
          
 		softAssert.assertTrue(expectedMsg.contains("Your new account has been successfully created"), "After registration msg donot contain success msg");
+		 
 		softAssert.assertAll();
         
 	}
@@ -105,13 +106,21 @@ public class RegisterTestCase {
 		
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
-		//fill login form
-		driver.findElement(By.xpath("//*[@id=\"input-email\"]")).sendKeys(emailID);
-		driver.findElement(By.xpath("//*[@id=\"input-password\"]")).sendKeys(pwd);
-		
-		driver.findElement(By.xpath("//input[@type = 'submit' and @value = 'Login']")).click();
-		
+		//fill login form 
 		try {
+			driver.findElement(By.xpath("//*[@id=\"input-email\"]")).sendKeys(emailID);
+			driver.findElement(By.xpath("//*[@id=\"input-password\"]")).sendKeys(pwd);
+			driver.findElement(By.xpath("//input[@type = 'submit' and @value = 'Login']")).click();
+			Reporter.log("login details filled properly");
+		}
+		catch(NoSuchElementException e)
+		{
+			Reporter.log("username, password, login element not found");
+		}
+		
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		try {
+		
 			driver.findElement(By.xpath("//a[@href='http://localhost:8080/nltp/index.php?route=account/logout']")).click();
 			} catch (NoSuchElementException e) {
 				

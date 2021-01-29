@@ -5,12 +5,11 @@
     <classes>
       <class name="testCases.RegisterTestCase">
         <methods>
-          <include name="RegisterAsStartUp"/>
-          <include name="RegisterAsMSME"/>
-          <include name="RegisterAsIndianAcademic"/>
           <include name="setBrowser"/>
           <include name="CloseWebsite"/>
           <include name="OpenWebsite"/>
+          <include name="RegisterAsIndividual" invocation-numbers="0"/>
+          <include name="Login"/>
         </methods>
       </class> <!-- testCases.RegisterTestCase -->
     </classes>

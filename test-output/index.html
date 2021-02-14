@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,35 +91,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
                     <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.RegisterTestCase" hash-for-method="RegisterAsIndividual({emailID=ruchid@123, confirmPwd=Lotus@123, lastname=random, pwd=Lotus@123, firstname=tester, UserTyp...)">RegisterAsIndividual({emailID=ruchid@123, confirmPwd=Lotus@123, lastname=random, pwd=Lotus@123, firstname=tester, UserTyp...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.RegisterTestCase" hash-for-method="RegisterAsIndianAcademic({ProfEmail=prof@gmail.com, UserType=Indian Academic Researcher, PhotoID=/home/ruchi/Pictures/no-imag...)">RegisterAsIndianAcademic({ProfEmail=prof@gmail.com, UserType=Indian Academic Researcher, PhotoID=/home/ruchi/Pictures/no-imag...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.RegisterTestCase" hash-for-method="RegisterAsIndianAcademic({ProfEmail=, UserType=Indian Academic Researcher, PhotoID=, OrgName=GovtCollege, firstname=academicT...)">RegisterAsIndianAcademic({ProfEmail=, UserType=Indian Academic Researcher, PhotoID=, OrgName=GovtCollege, firstname=academicT...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.RegisterTestCase" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.RegisterTestCase" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.RegisterTestCase" hash-for-method="RegisterAsIndividual({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Automation...)">RegisterAsIndividual({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Automation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.RegisterTestCase" hash-for-method="RegisterAsIndividual({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Auto, pwd=...)">RegisterAsIndividual({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Auto, pwd=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -130,8 +145,8 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
               <span class="class-name">testCases.RegisterTestCase</span>
@@ -139,66 +154,33 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="RegisterAsIndividual({emailID=ruchid@123, confirmPwd=Lotus@123, lastname=random, pwd=Lotus@123, firstname=tester, UserTyp...)">
-                  </a> <!-- RegisterAsIndividual({emailID=ruchid@123, confirmPwd=Lotus@123, lastname=random, pwd=Lotus@123, firstname=tester, UserTyp...) -->
-                  <span class="method-name">RegisterAsIndividual</span>
-                  <span class="parameters">({emailID=ruchid@123, confirmPwd=Lotus@123, lastname=random, pwd=Lotus@123, firstname=tester, UserType=Individual User})</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: TypeError: browsingContextFn().currentWindowGlobal is null
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;ruchi-Inspiron-5570&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-99-generic&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 23011, moz:profile: /tmp/rust_mozprofile8MGPOr, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.0-99-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 14074ba0-e67c-46ea-ae48-655e8ccfbce4
-*** Element info: {Using=xpath, value=/html/body/div/div/div/h4[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at testCases.RegisterTestCase.RegisterAsIndividual(RegisterTestCase.java:230)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
+                  <a name="RegisterAsIndianAcademic({ProfEmail=prof@gmail.com, UserType=Indian Academic Researcher, PhotoID=/home/ruchi/Pictures/no-imag...)">
+                  </a> <!-- RegisterAsIndianAcademic({ProfEmail=prof@gmail.com, UserType=Indian Academic Researcher, PhotoID=/home/ruchi/Pictures/no-imag...) -->
+                  <span class="method-name">RegisterAsIndianAcademic</span>
+                  <span class="parameters">({ProfEmail=prof@gmail.com, UserType=Indian Academic Researcher, PhotoID=/home/ruchi/Pictures/no-image.jpg, OrgName=College, firstname=academicUser, lastname=researcher, phone=9899108080, pwd=Lotus@123, emailID=xyz@gmail.com, webURL=https://www.google.com, confirmPwd=Lotus@123, otp=12345})</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testCases.RegisterTestCase.RegisterAsIndianAcademic(RegisterTestCase.java:208)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterAsIndianAcademic({ProfEmail=, UserType=Indian Academic Researcher, PhotoID=, OrgName=GovtCollege, firstname=academicT...)">
+                  </a> <!-- RegisterAsIndianAcademic({ProfEmail=, UserType=Indian Academic Researcher, PhotoID=, OrgName=GovtCollege, firstname=academicT...) -->
+                  <span class="method-name">RegisterAsIndianAcademic</span>
+                  <span class="parameters">({ProfEmail=, UserType=Indian Academic Researcher, PhotoID=, OrgName=GovtCollege, firstname=academicTester, lastname=testResearcher, phone=9899108080, pwd=Lotus@123, emailID=abc@gmail.com, webURL=, confirmPwd=Lotus@123, otp=12345})</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testCases.RegisterTestCase.RegisterAsIndianAcademic(RegisterTestCase.java:208)
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-skipped">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testCases.RegisterTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -207,117 +189,190 @@ Session ID: 14074ba0-e67c-46ea-ae48-655e8ccfbce4
                   <a name="Login">
                   </a> <!-- Login -->
                   <span class="method-name">Login</span>
-                  <div class="stack-trace">java.lang.Throwable: Method RegisterTestCase.Login()[pri:2, instance:testCases.RegisterTestCase@2d928643] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterAsIndividual({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Automation...)">
+                  </a> <!-- RegisterAsIndividual({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Automation...) -->
+                  <span class="method-name">RegisterAsIndividual</span>
+                  <span class="parameters">({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Automation, pwd=Lotus@123, firstname=testUser, UserType=Individual User})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterAsIndividual({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Auto, pwd=...)">
+                  </a> <!-- RegisterAsIndividual({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Auto, pwd=...) -->
+                  <span class="method-name">RegisterAsIndividual</span>
+                  <span class="parameters">({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Auto, pwd=Lotus@123, firstname=tester, UserType=Individual User})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--600273936/testng-customsuite.xml</span>
+            <span class="header-content">/home/ruchi/eclipse-workspace/NPLT-Test/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testCases.CustomListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Register Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.RegisterTestCase&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Register Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Register Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'RegisterAsIndividual')
 data.setCell(0, 2, 'testCases.RegisterTestCase')
-data.setCell(0, 3, 40852);
+data.setCell(0, 3, 87654);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Login')
+data.setCell(1, 1, 'RegisterAsIndividual')
 data.setCell(1, 2, 'testCases.RegisterTestCase')
-data.setCell(1, 3, 0);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(1, 3, 77613);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'RegisterAsIndianAcademic')
+data.setCell(2, 2, 'testCases.RegisterTestCase')
+data.setCell(2, 3, 11074);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'RegisterAsIndianAcademic')
+data.setCell(3, 2, 'testCases.RegisterTestCase')
+data.setCell(3, 3, 5913);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Login')
+data.setCell(4, 2, 'testCases.RegisterTestCase')
+data.setCell(4, 3, 1);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">RegisterAsIndividual({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Automation...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test case execution started of test case: RegisterAsIndividual</span>
+                <span class="reporter-method-output">Element clicked is: radio_IndividualUser_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: firstname_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: lastname_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: email_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: pwd_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: confirmPwd_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: chkbox_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: continueBtn_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: tel_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: OTP_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: inputBtn_XPATH</span>
+                <span class="reporter-method-output">Element is present : logoutMenu_XPATH</span>
+                <span class="reporter-method-output">Logout menu found</span>
+                <span class="reporter-method-output">Name of the passed test case RegisterAsIndividual</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Login</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test case execution started of test case: Login</span>
+                <span class="reporter-method-output">Name of the passed test case Login</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">RegisterAsIndividual({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Auto, pwd=...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test case execution started of test case: RegisterAsIndividual</span>
+                <span class="reporter-method-output">Element clicked is: radio_IndividualUser_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: firstname_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: lastname_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: email_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: pwd_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: confirmPwd_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: chkbox_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: continueBtn_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: tel_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: OTP_XPATH</span>
+                <span class="reporter-method-output">Element clicked is: inputBtn_XPATH</span>
+                <span class="reporter-method-output">Element is present : logoutMenu_XPATH</span>
+                <span class="reporter-method-output">Logout menu found</span>
+                <span class="reporter-method-output">Name of the passed test case RegisterAsIndividual</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">RegisterAsIndianAcademic({ProfEmail=prof@gmail.com, UserType=Indian Academic Researcher, PhotoID=/home/ruchi/Pictures/no-imag...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test case execution started of test case: RegisterAsIndianAcademic</span>
+                <span class="reporter-method-output">Name of the failed test caseRegisterAsIndianAcademic</span>
+                <span class="reporter-method-output"><a href="file:////home/ruchi/eclipse-workspace/NPLT-Test//reports//RegisterAsIndianAcademicSat_Feb_13_22_14_51_PST_2021.jpg.png"> Error Screenshot </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">RegisterAsIndianAcademic({ProfEmail=, UserType=Indian Academic Researcher, PhotoID=, OrgName=GovtCollege, firstname=academicT...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test case execution started of test case: RegisterAsIndianAcademic</span>
+                <span class="reporter-method-output">Name of the failed test caseRegisterAsIndianAcademic</span>
+                <span class="reporter-method-output"><a href="file:////home/ruchi/eclipse-workspace/NPLT-Test//reports//RegisterAsIndianAcademicSat_Feb_13_22_15_02_PST_2021.jpg.png"> Error Screenshot </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -328,22 +383,42 @@ return data;
                 <span class="method-name">setBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-suite before">
+                <span class="method-name">OpenWebsite</span>
+                <span class="method-start">9760 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">OpenWebsite</span>
-                <span class="method-start">6792 ms</span>
+                <span class="method-start">65065 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">RegisterAsIndividual({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Auto, pwd=...)</span>
+                <span class="method-start">74649 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RegisterAsIndividual({phone=9899108080, emailID=ruchid123@gmail.com, confirmPwd=Lotus@123, otp=12345, lastname=Automation...)</span>
+                <span class="method-start">162305 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">RegisterAsIndividual({emailID=ruchid@123, confirmPwd=Lotus@123, lastname=random, pwd=Lotus@123, firstname=tester, UserTyp...)</span>
-                <span class="method-start">8212 ms</span>
+                <span class="method-name">RegisterAsIndianAcademic({ProfEmail=prof@gmail.com, UserType=Indian Academic Researcher, PhotoID=/home/ruchi/Pictures/no-imag...)</span>
+                <span class="method-start">239939 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">CloseWebsite</span>
-                <span class="method-start">49093 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-name">RegisterAsIndianAcademic({ProfEmail=, UserType=Indian Academic Researcher, PhotoID=, OrgName=GovtCollege, firstname=academicT...)</span>
+                <span class="method-start">246018 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Login</span>
+                <span class="method-start">269745 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">274156 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

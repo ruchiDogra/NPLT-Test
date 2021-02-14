@@ -32,7 +32,7 @@ public class TestDataProvider {
 			
 			//reading data from xls file. xls reading code is in utilities/ExcelReader.java
 			//testdata.xls is kept in the resources folder
-			ExcelReader excel = new ExcelReader("/home/ruchi/eclipse-workspace/NPLT-Test/src/test/resources/excel/testdata.xls"); // ExcelReader class constructor needs string excel path as parameter which you wants to read
+			ExcelReader excel = new ExcelReader("./src/test/resources/excel/testdata.xls"); // ExcelReader class constructor needs string excel path as parameter which you wants to read
 			String sheetName = " ";
 			
 			if( m.getName().equals("RegisterAsIndividual"))
@@ -42,14 +42,22 @@ public class TestDataProvider {
 			}
 			else if (m.getName().equals("RegisterAsIndianAcademic"))
 			{
+				sheetName = "RegisterAsIndianAcademic";
 				System.out.println("test data sheet name is " + m.getName());
 			}
 			else if (m.getName().equals("RegisterAsStartup"))
 			{
+				sheetName = "RegisterAsStartup";
 				System.out.println("test data sheet name is " + m.getName());
 			}
 			else if(m.getName().contentEquals("RegisterAsMSME"))
 			{
+				sheetName ="RegisterAsMSME";
+				System.out.println("test data sheet name is " + m.getName());
+			}
+			else if(m.getName().equals("doLogin"))
+			{
+				sheetName = "doLogin";
 				System.out.println("test data sheet name is " + m.getName());
 			}
 			
@@ -65,9 +73,29 @@ public class TestDataProvider {
 					System.out.println("row number is " + i + "col number is" + j + data[i][j]);
 				}
 			}
-			
 			return data;
 		}
+		
+		//parallel = true attribute execute the test cases in parallel
+		@DataProvider (name = "dpBrowsername", parallel = true) 
+		public Object[][] BrowserName(Method m)
+		{
+			ExcelReader excel = new ExcelReader("./src/test/resources/excel/testdata.xls");
+			String sheetName = "";
+			sheetName = m.getName(); // getName method of reflection API gives current method name, which should be same as xls sheet name
+			//	Object[][] data = new Object[2][1];
+			int rowCnt = excel.getRowCount(sheetName);
+			int colCnt = excel.getColumnCount(sheetName);
+			Object[][] data = new Object[rowCnt-1][colCnt];
+			for(int i= 0; i< rowCnt-1; i++) // as we don't have to read the sheet header 
+			{
+				for(int j=0; j< colCnt; j++)
+				{
+					data[i][j] = excel.getCellData(sheetName, j, i+2);
+				}
+			}
+			return data; 
+		}		
 		
 		@DataProvider(name = "dp1") // Method is function of Reflection class, which gives the name of the fuction which is calling getData
 		public Object[][] getDataUsingHashTable(Method m)
@@ -88,11 +116,12 @@ public class TestDataProvider {
 				for(int colNum=0; colNum< colCnt; colNum++)
 				{
 //					data[rowNum][colNum] = excel.getCellData(sheetName, colNum, rowNum+2); //rowNum =2 is the value row 
-					System.out.println("value of row " + rowNum + " and colNum " + colNum + "is " + data[rowNum+2][colNum]); 
 					tableData.put(excel.getCellData(sheetName, colNum, 1), excel.getCellData(sheetName, colNum, rowNum+2));
 					data[rowNum][0]= tableData; 
 				}
 			}
 			return data;
 		}
+		
+		
 }

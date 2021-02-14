@@ -1,33 +1,24 @@
-package forms;
+package testCases;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import base.BaseClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import utilities.ExcelReader;
 import utilities.TestDataProvider;
 
-public class LoginParameterization {
+public class LoginTestCase extends BaseClass{
 
-	public  WebDriver driver;
-	
-	
-//	
-	//public void openURL()
-	
-	@Test(dataProviderClass = TestDataProvider.class, dataProvider = "dpBrowsername", priority = 1 )
-	public void BrowserName(String BrowserName)
+	//open URL in different browser
+	@Test(dataProviderClass = TestDataProvider.class, dataProvider = "dpBrowsername", priority = 1)
+	public void BrowserName (String BrowserName)
 	{
 		try 
 		{
@@ -43,9 +34,8 @@ public class LoginParameterization {
 			}
 		}catch(Throwable t)
 		{
-			Reporter.log("Exception is:" + t.getMessage());
+			Reporter.log("Exception is: " + t.getMessage());
 		}
-		
 		driver.get("http://localhost:8080/nltp/index.php?route=account/login");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -76,5 +66,4 @@ public class LoginParameterization {
 	{
 		driver.quit();
 	}
-	
 }

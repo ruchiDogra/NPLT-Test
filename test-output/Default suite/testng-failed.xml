@@ -8,7 +8,7 @@
           <include name="setBrowser"/>
           <include name="CloseWebsite"/>
           <include name="OpenWebsite"/>
-          <include name="RegisterAsIndividual" invocation-numbers="0"/>
+          <include name="RegisterAsIndividual"/>
           <include name="Login"/>
         </methods>
       </class> <!-- testCases.RegisterTestCase -->

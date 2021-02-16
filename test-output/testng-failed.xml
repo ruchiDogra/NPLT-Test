@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="testCases.CustomListener"/>
+    <listener class-name="testCases.RetryListener"/>
   </listeners>
   <test thread-count="5" name="Register Test(failed)">
     <classes>
@@ -10,8 +11,9 @@
         <methods>
           <include name="CloseBrowser"/>
           <include name="setBrowser"/>
-          <include name="RegisterAsIndianAcademic" invocation-numbers="0 1"/>
           <include name="OpenWebsite"/>
+          <include name="RegisterAsIndividual"/>
+          <include name="Login"/>
         </methods>
       </class> <!-- testCases.RegisterTestCase -->
     </classes>

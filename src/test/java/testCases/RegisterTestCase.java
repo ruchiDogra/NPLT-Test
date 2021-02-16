@@ -30,36 +30,7 @@ import base.BaseClass;
 //Class to test registration, login, download for Individual user
 public class RegisterTestCase extends BaseClass 
 {
-	
-	@BeforeSuite
-/*	public void setBrowser() throws IOException
-	{
-		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
-		
-		Reporter.log("Driver is set"); // testNG report
-		log.info("Browser is set"); //this is log4j api log 
-		
-		//code to load property file
-		try 
-		{
-			finput = new FileInputStream(".//src//test//resources//properties//OR.properties"); 
-		} 
-		catch (FileNotFoundException e)
-		{
-			e.printStackTrace();
-		}
-		try 
-		{
-			OR.load(finput);
-			Reporter.log("Properties file is loaded");
-		}
-		catch(IOException e)
-		{
-			e.printStackTrace();
-		}
-	} 
-*/
+
 	@BeforeTest
 	public void OpenWebsite()
 	{

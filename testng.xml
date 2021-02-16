@@ -4,11 +4,13 @@
   
   <listeners>
     	<listener class-name = "testCases.CustomListener"></listener>
+    	<listener class-name = "testCases.RetryListener"></listener>
   </listeners>
   
   <test  name="Register Test">
     <classes>
-       <class name="testCases.RegisterTestCase"> </class>  
+       <class name="testCases.RegisterTestCase"> </class>
+       <class name = "testCases.RetryTestCase"> </class>  
   <!-- <class name = "testCases.LoginTestCase"></class> -->
        
      <!--  <class name="forms.LoginParameterization"> </class> -->  
